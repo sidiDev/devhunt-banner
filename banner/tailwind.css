@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.dh-banner {
+  @apply bg-slate-900 border-b border-slate-800;
+}
+
+.dh-banner .banner-container {
+  @apply mx-auto max-w-screen-xl items-center justify-center gap-x-4 px-4 py-2 text-sm text-white sm:flex md:gap-x-12 md:px-8 lg:gap-x-32;
+}
+
+.dh-banner .banner-container .content {
+  @apply flex gap-x-3 font-medium sm:items-center;
+}
+
+.dh-banner .banner-container .btn {
+  @apply mt-3 inline-flex w-full flex-none items-center justify-center rounded-lg bg-orange-500 p-2 text-center font-medium text-indigo-50 duration-150 hover:bg-orange-600 sm:mt-0 sm:w-auto;
+}
+
+.dh-banner .banner-container .btn svg {
+  @apply h-5 w-5;
+}
