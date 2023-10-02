@@ -3,21 +3,29 @@
 @tailwind utilities;
 
 .dh-banner {
-  @apply bg-slate-900 border-b border-slate-800;
+  @apply border-b border-slate-800 bg-slate-900 text-slate-100;
 }
 
 .dh-banner .banner-container {
-  @apply mx-auto max-w-screen-xl items-center justify-center gap-x-4 px-4 py-2 text-sm text-white sm:flex md:gap-x-12 md:px-8 lg:gap-x-32;
+  @apply mx-auto flex max-w-screen-xl items-center justify-center gap-x-4 px-4 py-4 text-sm md:px-8;
 }
 
 .dh-banner .banner-container .content {
-  @apply flex gap-x-3 font-medium sm:items-center;
+  @apply flex sm:items-center;
 }
 
 .dh-banner .banner-container .btn {
-  @apply mt-3 inline-flex w-full flex-none items-center justify-center rounded-lg bg-orange-500 p-2 text-center font-medium text-indigo-50 duration-150 hover:bg-orange-600 sm:mt-0 sm:w-auto;
+  @apply inline-flex flex-none items-center justify-center font-medium text-slate-50;
+}
+
+.dh-banner .banner-container .btn:hover {
+  @apply underline;
 }
 
 .dh-banner .banner-container .btn svg {
-  @apply h-5 w-5;
+  @apply h-5 w-5 duration-200;
+}
+
+.dh-banner .banner-container .btn:hover svg {
+  transform: translateX(5px);
 }
